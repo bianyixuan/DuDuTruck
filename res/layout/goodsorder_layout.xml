@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_sureSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:text="确认发送" />
+
+    <EditText
+        android:id="@+id/goodsDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wordToDriver"
+        android:layout_alignLeft="@+id/wordToDriver"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="货物描述" />
+
+    <EditText
+        android:id="@+id/wordToDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_sureSend"
+        android:layout_alignLeft="@+id/goodsSendTo"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="给司机捎句话" />
+
+    <EditText
+        android:id="@+id/goodsSendTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goodsDetail"
+        android:layout_alignLeft="@+id/goodsSendFrom"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="到哪里去" />
+
+    <EditText
+        android:id="@+id/goodsSendFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goodsSendTo"
+        android:layout_alignLeft="@+id/goodsSendTime"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="从哪里出发" />
+
+    <EditText
+        android:id="@+id/goodsSendTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goodsSendFrom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="什么时候出发" />
+
+    <Button
+        android:id="@+id/book_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="返回" />
+
+</RelativeLayout>

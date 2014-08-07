@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="请选择城市" >
+        </EditText>
+
+        <Button
+            android:id="@+id/startdown"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:text="开始下载"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/citylistview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/downlistview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5" >
+
+        <Button
+            android:id="@+id/citylistbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="城市列表" />
+
+        <Button
+            android:id="@+id/downlodebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下载管理器" />
+    </LinearLayout>
+
+</LinearLayout>
